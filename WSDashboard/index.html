@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WS Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="header">
+        <div id="hostConfigs">
+            <div id="requestDelay"></div>
+            <div id="hostStatus" class="connectionStatus"></div>
+            <input id="hostIp" type="text" placeholder="seuhost.com:porta" value="192.168.1.104:3000">
+            <button onclick="onTryConnectPress()">Conectar</button>
+        </div>
+        <div id="clockAndDate">
+            <div id="date"></div>
+            <div id="clock"></div>
+        </div>
+    </nav>
+    <div id="content"></div>
+</body>
+<script src="webOSTVjs-1.2.4/webOSTV.js" charset="utf-8"></script>
+<script src="webOSTVjs-1.2.4/webOSTV-dev.js" charset="utf-8"></script>
+<script type="text/javascript" src="./js/script.js" charset="utf-8"></script>
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "com.wsdashboard.app",
+  "version": "1.0.0",
+  "vendor": "willstone",
+  "type": "web",
+  "main": "index.html",
+  "title": "WS Dashboard",
+  "icon": "./images/icon.png",
+  "largeIcon": "./images/largeIcon.png",
+  "appDescription": "This's a dashboard app",
+  "bgColor": "white",
+  "iconColor": "black",
+  "closeOnRotation": false,
+  "disableBackHistoryAPI": false,
+  "handlesRelaunch": false,
+  "splashBackground": "./images/splashscreen.png",
+  "splashColor": "#000000",
+  "splashFitModeOnPortrait": "width",
+  "requiredMemory": 20,
+  "supportPortraitMode": false,
+  "supportTouchMode": "virtual",
+  "transparent": false
+}

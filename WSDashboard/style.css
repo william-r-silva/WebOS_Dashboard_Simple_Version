@@ -1,0 +1,97 @@
+:root{
+
+    --green: green;
+    --red: red;
+
+    --hostStatus: var(--red);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+    outline: none;
+
+    color: white;
+    text-shadow: 2px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(./images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header{
+    display: flex;
+    padding: 5px;
+
+    width: 100vw;
+    border-bottom: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#header #hostConfigs{
+    display: flex;
+    width: 100%;
+}
+
+#header #hostConfigs #requestDelay{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    width: 130px;
+}
+
+#header #hostConfigs .connectionStatus{
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background-color: var(--hostStatus);
+
+    margin-right: 5px;
+}
+
+#header #hostConfigs input{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 5px;
+
+    background-color: rgba(255, 255, 255, 0.6);
+    width: calc(100% - 235px);
+
+    margin-right: 5px;
+}
+
+#header #hostConfigs button{
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0 5px;
+
+    width: 65px;
+
+    color: black;
+}
+
+#header #clockAndDate{
+    width: 200px;
+    
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header #clockAndDate #date{
+    margin-right: 5px;
+}
+
+#content {
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
