@@ -1,4 +1,6 @@
-const fs = require('fs').promises;
+const Dashboard = require('./controllers/Dashboard');
+const UserApp = require('./controllers/UserApp');
+
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -9,18 +11,12 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', async (req, res) => {
-    var response = {
-        view: ""
-    }
-    try {
-        response.view = await fs.readFile('./dashboard1/dashboard1.html', 'utf8');
-        response.script = await fs.readFile('./dashboard1/dashboard1.js', 'utf8');
-    } catch (erro) {
-        console.error('Ocorreu um erro ao ler o arquivo:', erro);
-    }
-    res.send(JSON.stringify(response));
-});
+// Dashboard
+app.get('/', Dashboard.getView);
+
+// UserApp
+app.get('/calendarEvents', UserApp.getCalendarEvent);
+app.post('/calendarEvents', UserApp.setCalendarEvent);
 
 app.listen(port, () => {
     console.log(`Servidor Express está ouvindo na porta ${port}`);

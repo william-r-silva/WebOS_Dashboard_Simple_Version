@@ -1,0 +1,33 @@
+<style>
+    .monthDay{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+
+        display: flex;
+        justify-content: center;
+    }
+    
+    #calendar{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Dom, .Seg, .Ter, .Qua, .Qui, .Sex, .Sab{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Dom, .Sab{
+        color: red;
+    }
+
+</style>
+<div class="">
+    <div id="calendar"></div>
+    <script src="dashboard1.js"></script>
+</div>
