@@ -1,0 +1,30 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+    color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px;
+    text-align: center;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+nav{
+    background-color: white;
+    border-right: 1px solid #599bb3;
+    width: 150px;
+    height: calc(100vh - 46px);
+}
+nav div{
+    padding: 10px;
+    border-bottom: 1px solid #599bb3;
+}

@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Dashboard User App</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <H3>WS Dashboard</H3>
+    </header>
     <nav id="mainMenu">
-        <input type="radio" name="selectedView" value="calendar">
-        <input type="radio" name="selectedView" value="notes">
+        <div>
+            <input checked id="calendarView" type="radio" name="selectedView" value="calendar" onclick="changeView(this)">
+            <label for="calendarView">Calendário</label>
+        </div>
+        <div>
+            <input id="notesView" type="radio" name="selectedView" value="notes" onclick="changeView(this)">
+            <label for="notesView">Notas</label>
+        </div>
     </nav>
     <div id="pageContent"></div>
+    <script src="index.js"></script>
 </body>
 </html>
